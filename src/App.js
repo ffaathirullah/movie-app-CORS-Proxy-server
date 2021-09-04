@@ -10,8 +10,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        "https://api.indeed.com/ads/apisearch?publisher=7778623931867371&format=json&v=2&co=id&q=front+end&sort=date&v=2&q=frontEnd&chnl=https://friendly-curran-361ef8.netlify.app/",
-        { headers: { "Access-Control-Allow-Origin": "*" } }
+        "https://mycorsproxy3.herokuapp.com/https://api.indeed.com/ads/apisearch?publisher=7778623931867371&format=json&v=2&co=id&q=front+end&sort=date&q=frontEnd"
       )
       .then((res) => {
         const movies = res.data.results;
