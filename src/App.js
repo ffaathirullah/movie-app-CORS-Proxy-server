@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        "http://api.indeed.com/ads/apisearch?publisher=7778623931867371&format=json&v=2&co=id&q=front+end&sort=date&v=2&q=frontEnd"
+        "https://api.indeed.com/ads/apisearch?publisher=7778623931867371&format=json&v=2&co=id&q=front+end&sort=date&v=2&q=frontEnd"
       )
       .then((res) => {
         const movies = res.data.results;
